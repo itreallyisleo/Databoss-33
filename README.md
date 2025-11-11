@@ -80,7 +80,7 @@ Frontend (HTML/CSS/JS) → Backend (PHP) → Database (MySQL).
 
 ---
 
-### ⚙️ Collaboration and Integration
+###  Collaboration and Integration
 - Both groups share the same **database schema (`auction_db_schema.sql`)**.  
 - **`db_connect.php`** serves as the universal database connection file used across all modules.  
 - Common frontend files (`/css`, `/js`, `/shared/`) are collaboratively maintained.  
