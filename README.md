@@ -16,7 +16,6 @@ The system allows users to register, list items, create auctions, and place bids
 ---
 
 ## Function Overview (Detailed)
-```
 | Module | Function | Description | Involves | Owner |
 |---------|-----------|--------------|-----------|--------|
 | **User** | Register | Create new user accounts; validate unique username & email; hash passwords before storing. | PHP Form + SQL INSERT | Leo & Mekial |
@@ -55,6 +54,7 @@ The system allows users to register, list items, create auctions, and place bids
 
 ---
 
+```
 ## 📂 Folder Structure
 
 The project follows a modular structure separating backend (PHP logic), database scripts, frontend assets, and documentation.  
