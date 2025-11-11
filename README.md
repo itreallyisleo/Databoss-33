@@ -55,7 +55,11 @@ The system allows users to register, list items, create auctions, and place bids
 
 ---
 
-## Folder Structure
+## 📂 Folder Structure
+
+The project follows a modular structure separating backend (PHP logic), database scripts, frontend assets, and documentation.  
+Each group is responsible for a clear subset of folders as indicated below.
+
 auction-website/
 │
 ├── 📁 database/ # Database layer (SQL scripts and connection)
@@ -123,3 +127,30 @@ auction-website/
 ├── contact.php # (Optional) Contact form or info page
 ├── config.php # Configuration constants (DB credentials, paths)
 └── README.md # Project overview, feature list, and team division
+
+yaml
+复制代码
+
+---
+
+### 🧠 Notes
+- Folder tree uses Markdown code block syntax (```), so it displays cleanly in GitHub.  
+- Each module has clear ownership:  
+  - 🟠 *Yufei & Irene → auction/* (Item & Auction modules)  
+  - 🟢 *Leo & Mekial → user/* (User & Bid modules)  
+- All PHP pages use `db_connect.php` for database access.  
+- Shared templates (`header.php`, `footer.php`) reduce duplication.  
+- `/docs` stores all academic deliverables and diagrams.  
+- `/database` is the single source of truth for schema and sample data.  
+
+---
+
+💡 **How to use:**  
+1. Copy everything (including code block) into your `README.md`.  
+2. Commit → Push → View on GitHub → You’ll see the full tree structure displayed perfectly.  
+3. Optional: add a short summary before or after explaining how to run the project locally (e.g., XAMPP setup).
+
+
+
+
+
