@@ -16,7 +16,7 @@ The system allows users to register, list items, create auctions, and place bids
 ---
 
 ## Function Overview (Detailed)
-
+```
 | Module | Function | Description | Involves | Owner |
 |---------|-----------|--------------|-----------|--------|
 | **User** | Register | Create new user accounts; validate unique username & email; hash passwords before storing. | PHP Form + SQL INSERT | Leo & Mekial |
@@ -127,3 +127,4 @@ auction-website/
 ├── contact.php                          # (Optional) Contact form or info page
 ├── config.php                           # Configuration constants (DB credentials, paths)
 └── README.md                            # Project overview, feature list, and team division
+```
