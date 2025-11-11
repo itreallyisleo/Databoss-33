@@ -6,12 +6,12 @@ The system allows users to register, list items, create auctions, and place bids
 
 ## Group Division
 
-| Member | Role | Responsibility |
-|---------|------|----------------|
-| **Yufei** | Database + Backend | Item & Auction modules |
-| **Irene** | Database + Backend | Item & Auction modules |
-| **Leo** | Database + Frontend | User & Bid modules |
-| **Mekial** | Database + Frontend | User & Bid modules |
+| Member | Responsibility |
+|---------|----------------|
+| **Yufei**  | Item & Auction modules |
+| **Irene**  | Item & Auction modules |
+| **Leo** | User & Bid modules |
+| **Mekial** | User & Bid modules |
 
 ---
 
@@ -53,13 +53,53 @@ The system allows users to register, list items, create auctions, and place bids
 | **Week 9** | Integration & final testing | Full system + presentation report |
 
 ---
+## Technical Responsibilities Overview
 
-```
+Our team’s development structure is **module-based**, meaning each group owns both backend and frontend work for their specific modules.  
+The project uses a classic **LAMP-style full-stack architecture**:  
+Frontend (HTML/CSS/JS) → Backend (PHP) → Database (MySQL).
+
+---
+
+### Overall Architecture
+
+| Layer | Technology | Responsibility |
+|-------|-------------|----------------|
+| **Frontend** | HTML, CSS, JavaScript | User interface, form validation, auction countdowns, dynamic updates |
+| **Backend** | PHP | Core business logic, authentication, bid processing, auction control |
+| **Database** | MySQL | Store and manage persistent data (users, items, bids, auctions, watchlists, notifications) |
+
+---
+
+### Group Division by Technical Focus
+
+| Group | Modules | Backend Focus | Frontend Focus |
+|--------|-----------|----------------|----------------|
+| **Group A (Leo & Mekial)** | **User + Bid** | <ul><li>User registration and login (session management)</li><li>Bid validation and comparison (SQL MAX logic)</li><li>Notification system (insert + read updates)</li></ul> | <ul><li>Dynamic bid updates (AJAX polling)</li><li>User dashboard and bid history pages</li><li>Form validation and alerts</li></ul> |
+| **Group B (Yufei & Irene)** | **Item + Auction** | <ul><li>Item CRUD (add/edit/delete items)</li><li>Auction lifecycle control (start, end, auto-close)</li><li>Winner determination and notification</li></ul> | <ul><li>Item listing and search/filtering</li><li>Countdown timer display</li><li>Image upload and preview functionality</li></ul> |
+
+---
+
+### ⚙️ Collaboration and Integration
+- Both groups share the same **database schema (`auction_db_schema.sql`)**.  
+- **`db_connect.php`** serves as the universal database connection file used across all modules.  
+- Common frontend files (`/css`, `/js`, `/shared/`) are collaboratively maintained.  
+- When integrated:
+  - **Auction group** creates and manages auctions (`auction_id`).
+  - **Bid group** references those auctions for bid submission and price updates.
+
+---
+
+### Summary
+> Both groups are **full-stack** within their modules.  
+> The project emphasizes backend logic (PHP + MySQL) with interactive frontend components for a complete user experience.
+
 ## Folder Structure
 
 The project follows a modular structure separating backend (PHP logic), database scripts, frontend assets, and documentation.  
 Each group is responsible for a clear subset of folders as indicated below.
 
+```
 auction-website/
 │
 ├── database/                            # Database layer (SQL scripts and connection)
