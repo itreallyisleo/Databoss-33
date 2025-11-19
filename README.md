@@ -12,6 +12,7 @@ The system allows users to register, list items, create auctions, and place bids
 | **Irene**  | Item & Auction modules |
 | **Leo** | User & Bid modules |
 | **Mekial** | User & Bid modules |
+||mail|
 
 ---
 
