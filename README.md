@@ -29,8 +29,8 @@ The system allows users to register, list items, create auctions, and place bids
 |  | View All Bids for Auction | List bids for a specific auction. | SQL SELECT ORDER BY | Leo & Mekial |
 |  | Display Highest Bid | Query current highest bid dynamically. | SQL MAX() | Leo & Mekial |
 |  | Basic Bid Validation | Reject low bids; ensure auction is active. | PHP Logic | Leo & Mekial |
-|  | My Bids (New) | getBidsByUser(userId) for buyer dashboard. | SQL SELECT JOIN | Leo |
-|  | Bids On My Auctions (New) | Seller views bids on auctions they created. | SQL JOIN auctions + items | Leo |
+|  | My Bids (New) | getBidsByUser(userId) for buyer dashboard. | SQL SELECT JOIN | Leo & Mekial  |
+|  | Bids On My Auctions (New) | Seller views bids on auctions they created. | SQL JOIN auctions + items | Leo & Mekial  |
 |  | Advanced Validation (New) | buyer ≠ seller; current time < endTime; reserve price logic. | PHP Logic | Leo & Mekial |
 | **Item** | Add New Item | Seller adds item with title, description, category, and image URL. | SQL INSERT | Yufei & Irene |
 |  | Edit Item | Seller modifies item info before auction starts. | SQL UPDATE | Yufei & Irene |
@@ -45,7 +45,7 @@ The system allows users to register, list items, create auctions, and place bids
 |  | schedule automatically | lecture 7 | lecture 7 | Yufei| 
 | **Watchlist** | Add to Watchlist | Save an item or auction for later viewing. | SQL INSERT | Leo & Mekial |
 |  | View Watchlist | List user’s saved items with links to detail pages. | SQL SELECT JOIN | Leo & Mekial |
-| **Watchlist** | Remove from Watchlist (New) | Remove saved auction from watchlist. | SQL DELETE | Leo & Mekial |
+|  | Remove from Watchlist (New) | Remove saved auction from watchlist. | SQL DELETE | Leo & Mekial |
 | **Images** | Upload Image | Allow seller to attach multiple images to each item. | File Upload + SQL INSERT | Yufei & Irene |
 |  | Display Image | Retrieve and show item images in item detail page. | SQL SELECT | Yufei & Irene |
 
